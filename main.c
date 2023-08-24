@@ -1,16 +1,16 @@
 #include "monty.h"
 col_t col = {NULL, NULL, NULL};
 /**
-* main - Entry point of Monty interpreter
-* @argc: Number of command-line arguments
-* @argv: Array of command-line arguments
-* Return: 0 on success, otherwise EXIT_FAILURE on failure
-*/
+ * main - Entry point of Monty interpreter
+ * @argc: Number of command-line arguments
+ * @argv: Array of command-line arguments
+ * Return: 0 on success, otherwise EXIT_FAILURE on failure
+ */
 int main(int argc, char *argv[])
 {
 	char *line = NULL;
 	size_t len = 0;
-    stack_t *stac = NULL;
+	stack_t *stac = NULL;
 	FILE *file;
 	ssize_t read;
 	unsigned int current_line_number = 0;
