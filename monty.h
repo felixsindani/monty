@@ -7,6 +7,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <ctype.h>
+#include <limits.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -36,11 +37,6 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
-{
-	char *opcode;
-	void (*f)(stack_t **stack, unsigned int line_number);
-} instruction_t;
 /**
 * struct col_s - Struct for holding context data.
 * @arg:  Argument string passed to Monty program
@@ -65,5 +61,6 @@ void push(stack_t **top_of_stack, unsigned int current_line_number);
 void swap(stack_t **top_of_stack, unsigned int current_line_number);
 void free_all_stack(stack_t **stack);
 int main(int argc, char *argv[]);
+int exec(char *line, unsigned int line_number_of_opcode, stack_t **ptr_top_stack);
 
 #endif

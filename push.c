@@ -29,5 +29,5 @@ void push(stack_t **top_of_stack, unsigned int current_line_number)
 			fclose(col.file);
 		exit(EXIT_FAILURE);
 	}
-		push_stack(top_of_stack, value);
+		push_in_stack(top_of_stack, value);
 }

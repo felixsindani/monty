@@ -14,7 +14,7 @@ void add(stack_t **top_of_stack, unsigned int current_line_number)
 		fprintf(stderr, "L%d: can't add, stack too short\n", current_line_number);
 		free(col.line);
 		fclose(col.file);
-		free_stack(top_of_stack);
+		free_all_stack(top_of_stack);
 		exit(EXIT_FAILURE);
 	}
 	abc = (*top_of_stack)->n + (*top_of_stack)->next->n;

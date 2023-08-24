@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	while ((read = getline(&line, &len, file)) != -1)
 	{
 		current_line_number++;
-		if (execute(line, current_line_number, &stac) == 0)
+		if (exec(line, current_line_number, &stac) == 0)
 			continue;
 	}
 	free_all_stack(&stac);
