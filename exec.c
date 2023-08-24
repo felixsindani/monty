@@ -15,6 +15,7 @@ int exec(char *line, unsigned int line_number_of_opcode, stack_t **ptr_top_stack
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
+		{"sub", sub},
 		{"nop", nop},
 		{NULL, NULL}
 	};
