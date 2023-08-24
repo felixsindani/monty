@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
-* sub - Subtract the top_of_stack element from the second element
-* @top_of_stack: Double pointer to the top_of_stack
-* @current_file_line: current Line number of the current op
-*/
+ * sub - Subtract the top_of_stack element from the second element
+ * @top_of_stack: Double pointer to the top_of_stack
+ * @current_file_line: current Line number of the current op
+ */
 void sub(stack_t **top_of_stack, unsigned int current_file_line)
 {
 	stack_t *buff;
@@ -22,5 +22,4 @@ void sub(stack_t **top_of_stack, unsigned int current_file_line)
 	(*top_of_stack)->prev = NULL;
 	(*top_of_stack)->n = -(element);
 	free(buff);
-
 }
