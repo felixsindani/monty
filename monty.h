@@ -63,5 +63,6 @@ void free_all_stack(stack_t **stack);
 int main(int argc, char *argv[]);
 void push_in_stack(stack_t **top_of_stack, int element);
 int exec(char *line, unsigned int line_number_of_opcode, stack_t **ptr_top_stack);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 #endif

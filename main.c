@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	size_t len = 0;
     stack_t *stac = NULL;
 	FILE *file;
-	ssize_t read;
+	ssize_t nread;
 	unsigned int current_line_number = 0;
 
 	if (argc != 2)
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
 		exit(EXIT_FAILURE);
 	}
-	while ((read = getline(&line, &len, file)) != -1)
+	while ((nread = getline(&line, &len, file)) != -1)
 	{
 		current_line_number++;
 		if (exec(line, current_line_number, &stac) == 0)
