@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-* exec - executes an opcode on a ptr_top_stack
-* @line: The line containing the opcode to exec.
-* @line_number_of_opcode: The line number of the opcode in the input file.
-* @ptr_top_stack: A pointer to the top of the ptr_top_stack.
-* Return: 0 if the opcode is a comment or if the line is empty, 1 otherwise.
-*/
+ * exec - executes an opcode on a ptr_top_stack
+ * @line: The line containing the opcode to exec.
+ * @line_number_of_opcode: The line number of the opcode in the input file.
+ * @ptr_top_stack: A pointer to the top of the ptr_top_stack.
+ * Return: 0 if the opcode is a comment or if the line is empty, 1 otherwise.
+ */
 int exec(char *line, unsigned int line_number_of_opcode, stack_t **ptr_top_stack)
 {
 	instruction_t opcodes[] = {

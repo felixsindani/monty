@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
-* add - Add the top_of_stack two elements
-* @top_of_stack: Double pointer at the top of the stack.
-* @current_line_number: current Line number of the current op
-*/
+ * add - Add the top_of_stack two elements
+ * @top_of_stack: Double pointer at the top of the stack.
+ * @current_line_number: current Line number of the current op
+ */
 void add(stack_t **top_of_stack, unsigned int current_line_number)
 {
 	int abc;
@@ -23,6 +23,4 @@ void add(stack_t **top_of_stack, unsigned int current_line_number)
 	(*top_of_stack)->prev = NULL;
 	(*top_of_stack)->n = abc;
 	free(buff);
-
-
 }

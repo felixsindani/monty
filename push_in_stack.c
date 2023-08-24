@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
-* push_in_stack - Pushes a new element onto the stack
-* @top_of_stack: A pointer to the top_of_stack
-* @element: The element to be pushed into the stack
-*/
+ * push_in_stack - Pushes a new element onto the stack
+ * @top_of_stack: A pointer to the top_of_stack
+ * @element: The element to be pushed into the stack
+ */
 void push_in_stack(stack_t **top_of_stack, int element)
 {
 	stack_t *new_node_1;

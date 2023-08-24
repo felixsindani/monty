@@ -1,10 +1,10 @@
 #include "monty.h"
 /**
-* pall - Prints stack values from top to bottom
-* @head_ptr: ptr to top of the stack
-* @current_line_number: current line number in the Monty bytecode file
-* Return - void
-*/
+ * pall - Prints stack values from top to bottom
+ * @head_ptr: ptr to top of the stack
+ * @current_line_number: current line number in the Monty bytecode file
+ * Return - void
+ */
 void pall(stack_t **head_ptr, unsigned int current_line_number)
 {
 	stack_t *h = NULL;

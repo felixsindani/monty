@@ -1,11 +1,11 @@
 #include "monty.h"
 /**
-* swap - swaps the top_of_stack two elements
-* @top_of_stack: double pointer to the top_of_stack
-* @current_line_number: current line number of the opcode
-* Description: If the stack contains less than two elements, swap
-* Return: void
-*/
+ * swap - swaps the top_of_stack two elements
+ * @top_of_stack: double pointer to the top_of_stack
+ * @current_line_number: current line number of the opcode
+ * Description: If the stack contains less than two elements, swap
+ * Return: void
+ */
 void swap(stack_t **top_of_stack, unsigned int current_line_number)
 {
 	stack_t *buff = *top_of_stack;
@@ -24,5 +24,4 @@ void swap(stack_t **top_of_stack, unsigned int current_line_number)
 	inputs = buff->n;
 	buff->n = buff->next->n;
 	buff->next->n = inputs;
-
 }
