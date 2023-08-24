@@ -13,7 +13,7 @@ void pop(stack_t **top_of_stack, unsigned int current_line_number)
 		fprintf(stderr, "L%d: can't pop,stack empty\n", current_line_number);
 		free(col.line);
 		fclose(col.file);
-		free_stack(top_of_stack);
+		free_all_stack(top_of_stack);
 		exit(EXIT_FAILURE);
 	}
 	buff = *top_of_stack;
